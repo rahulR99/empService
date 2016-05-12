@@ -17,5 +17,6 @@
       class="ems.com.dao.EmployeeDaoImpl">
       <property name="dataSource"  ref="dataSource" />    
    </bean>
-   
+   <bean id="employeeService" class="ems.com.service.EmployeeServiceImpl">
+   </bean>
 </beans>

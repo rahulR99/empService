@@ -32,7 +32,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@SuppressWarnings("unchecked")
 	public List<Employee> getAllEmployee() {
-		String sql="select * from empl employee_temp";
+		String sql="select * from  employee_temp";
 		return jdbcTemplateObject.query(sql, new EmployeeMapper());
 	}
 

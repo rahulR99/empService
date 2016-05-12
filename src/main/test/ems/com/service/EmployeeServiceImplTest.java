@@ -27,6 +27,7 @@ public class EmployeeServiceImplTest {
 		employee.setAddress(address);
 		employee.setEmpDesg("SE");
 		employeeService.addEmployee(employee);
+		assertTrue(true);
 	}
 
 	@Test
@@ -46,7 +47,9 @@ public class EmployeeServiceImplTest {
 
 	@Test
 	public void testGetAllEmployee() {
-		fail("Not yet implemented");
+		//employeeService.getAllEmployee();
+		System.out.println(employeeService.getAllEmployee().get(0).toString());
+		assertTrue(true);
 	}
 	
 	private Department getDepartment() {

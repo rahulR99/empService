@@ -7,12 +7,16 @@ import ems.com.model.Employee;
 import ems.com.util.CommonUtils;
 
 public class EmployeeServiceImpl implements EmployeeService {
-
-	EmployeeDao dao = CommonUtils.getDaoObject();
-
+	private static EmployeeDao dao;
+	static{	
+			dao = CommonUtils.getDaoObject();
+		}
+	public EmployeeServiceImpl(){
+		
+	}
 	public int addEmployee(Employee employee) {
 		if (employee != null) {
-			dao.addEmployee(employee);
+			this.dao.addEmployee(employee);
 		}
 		return 0;
 	}
@@ -20,21 +24,21 @@ public class EmployeeServiceImpl implements EmployeeService {
 		List<Employee> employeeList = null;
 		if (name != null || empId != 0) {
 
-			employeeList = dao.searchEmployee(empId, name);
+			employeeList = this.dao.searchEmployee(empId, name);
 		}
 		return employeeList;
 	}
 
 	public String deleteEmployee(int empId) {
-		return dao.deleteEmployee(empId);
+		return this.dao.deleteEmployee(empId);
 	}
 
 	public String updateEmployee(Employee emp) {
-		return dao.updateEmployee(emp);
+		return this.dao.updateEmployee(emp);
 	}
 
 	public List<Employee> getAllEmployee() {
-		return dao.getAllEmployee();
+		return this.dao.getAllEmployee();
 	}
 
 }

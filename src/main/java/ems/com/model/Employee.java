@@ -46,4 +46,12 @@ public class Employee {
 	public void setEmpDesg(String empDesg) {
 		this.empDesg = empDesg;
 	}
+
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName
+				+ ", address=" + address + ", dept=" + dept + ", salary="
+				+ salary + ", empDesg=" + empDesg + "]";
+	}
+	
 }

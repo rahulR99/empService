@@ -15,6 +15,7 @@ public class CommonUtils {
 		}
 	
 	public static EmployeeDao getDaoObject(){
+		
 		 return dao = (EmployeeDaoImpl)context.getBean("employeeDaoImpl");
 	}
 }
