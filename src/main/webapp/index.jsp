@@ -38,8 +38,8 @@
 				  <li><div class="shiftright"></div></li>
 				<li>
 					<div>
-						<input type="text" class="input-lg searchBox" placeholder="Search by NAME,ID"/>
-						<button class="btn btn-success">Search</button>
+						<input type="text" class="input-lg searchBox" placeholder="Search by NAME,ID" id="searchInputId"/>
+						<button class="btn btn-success" id="searchBarBtnId">Search</button>
 					</div>
 				  </li>
 				<li></li>
