@@ -12,11 +12,11 @@ public interface EmployeeService {
 	int  addEmployee(Employee employee);
 	
 	/**
-	 * @param empId
+	 * @param id
 	 * @param name
 	 * @return
 	 */
-	List<Employee> searchEmployee(int empId,String name);
+	List<Employee> searchEmployee(long id,String name);
 	/**
 	 * @param empId
 	 * @return

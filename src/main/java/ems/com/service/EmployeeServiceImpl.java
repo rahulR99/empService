@@ -20,7 +20,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		}
 		return 0;
 	}
-	public List<Employee> searchEmployee(int empId, String name) {
+	public List<Employee> searchEmployee(long empId, String name) {
 		List<Employee> employeeList = null;
 		if (name != null || empId != 0) {
 

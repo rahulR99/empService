@@ -21,7 +21,7 @@ public interface EmployeeDao {
 	 * @param name
 	 * @return
 	 */
-	List<Employee> searchEmployee(int empId,String name);
+	List<Employee> searchEmployee(long empId,String name);
 	/**
 	 * @param empId
 	 * @return

@@ -17,7 +17,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	      this.jdbcTemplateObject = new JdbcTemplate(dataSource);
 	}
 
-	public List<Employee> searchEmployee(int empId, String name) {
+	public List<Employee> searchEmployee(long empId, String name) {
 		
 		String sql="select * from employee_temp where emp_id= ? or emp_name=?";
 		@SuppressWarnings("unchecked")
@@ -26,7 +26,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	}
 
 	public String deleteEmployee(int empId) {
-		String sql="select * from employee_temp where emp_id=?";
+		String sql="delete from employee_temp where emp_id=?";
 		return String.valueOf(jdbcTemplateObject.update(sql,empId));
 	}
 
@@ -36,6 +36,8 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return jdbcTemplateObject.query(sql, new EmployeeMapper());
 	}
 
+	
+	
 	public int addEmployee(Employee employee) {
 		      String SQL = "insert into employee_temp(emp_name,emp_sal,emp_desig,address,dept) values(?,?,?,?,?)";		      
 		      jdbcTemplateObject.update( SQL, employee.getEmpName(),employee.getSalary(),employee.getEmpDesg(),
