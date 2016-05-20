@@ -1,26 +1,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>EMS</groupId>
-  <artifactId>ems</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>ems Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>EMS</groupId>
+	<artifactId>ems</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ems Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 		<!-- spring-context which provides core functionality -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>4.1.6.RELEASE</version>
 		</dependency>
- 
+
 		<!-- The spring-aop module provides an AOP Alliance-compliant aspect-oriented 
 			programming implementation allowing you to define -->
 		<dependency>
@@ -28,7 +28,7 @@
 			<artifactId>spring-aop</artifactId>
 			<version>4.1.6.RELEASE</version>
 		</dependency>
- 
+
 		<!-- The spring-webmvc module (also known as the Web-Servlet module) contains 
 			Spring’s model-view-controller (MVC) and REST Web Services implementation 
 			for web applications -->
@@ -37,7 +37,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.1.6.RELEASE</version>
 		</dependency>
- 
+
 		<!-- The spring-web module provides basic web-oriented integration features 
 			such as multipart file upload functionality and the initialization of the 
 			IoC container using Servlet listeners and a web-oriented application context -->
@@ -47,52 +47,41 @@
 			<version>4.1.6.RELEASE</version>
 		</dependency>
 		<dependency>
-	<groupId>org.springframework</groupId>
-	<artifactId>spring-jdbc</artifactId>
-	<version>4.0.9.RELEASE</version>
-</dependency>
-
-<dependency>
-	<groupId>javax.servlet</groupId>
-	<artifactId>javax.servlet-api</artifactId>
-	<version>3.0.1</version>
-</dependency>
-
-		<dependency>
-	<groupId>mysql</groupId>
-	<artifactId>mysql-connector-java</artifactId>
-	<version>5.1.6</version>
-</dependency>
-<dependency>
-			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-server</artifactId>
-			<version>2.17</version>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.0.9.RELEASE</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.glassfish.jersey.containers</groupId>
-			<artifactId>jersey-container-servlet-core</artifactId>
-			<version>2.17</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.5.3</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-moxy</artifactId>
-			<version>2.17</version>
+			<groupId>org.json</groupId>
+			<artifactId>org.json</artifactId>
+			<version>chargebee-1.0</version>
 		</dependency>
-		<dependency>
-    <groupId>com.owlike</groupId>
-    <artifactId>genson</artifactId>
-    <version>0.98</version>
-</dependency>
-<dependency>
-   <groupId>org.codehaus.jackson</groupId>
-   <artifactId>jackson-mapper-asl</artifactId>
-   <version>1.9.13</version>
-  </dependency>
 
-  </dependencies>
-  <build>
-    <finalName>ems</finalName>
-  </build>
+	</dependencies>
+
+	<build>
+		<finalName>ems</finalName>
+	</build>
 </project>

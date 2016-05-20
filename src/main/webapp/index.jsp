@@ -1,11 +1,11 @@
 <html>
 	<head>
-		 <script src="http://localhost:8000/jquery/dist/jquery.min.js"></script>
+		<script src="http://localhost:8000/jquery/dist/jquery.min.js"></script>
 		<script src="http://localhost:8000/bootstrap/dist/js/bootstrap.min.js"></script>
-         <script src="http://localhost:8000/jsrender/jsrender.min.js"></script>
+        <script src="http://localhost:8000/jsrender/jsrender.min.js"></script>
 		<script src="http://localhost:8000/underscore/underscore-min.js"></script>
 		<script src="http://localhost:8000/backbone/backbone-min.js"></script>
-		<script src="http://localhost:8000/js/router.js"></script>
+		<script src="http://localhost:8000/js/employeeModel.js"></script>
 		<script src="http://localhost:8000/js/templateLoader.js"></script>
 		<script src="http://localhost:8000/js/controller.js"></script>
 		<script src="http://localhost:8000/js/main.js"></script>

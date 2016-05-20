@@ -1,13 +1,25 @@
 package ems.com.model;
 
-public class Employee {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonIgnoreProperties
+public class Employee {
+	@JsonProperty
 	long empId;
+	@JsonProperty
 	String empName;
+	@JsonProperty
 	Address address;
+	@JsonProperty
 	Department dept;
+	@JsonProperty
 	double salary;
+	@JsonProperty
 	String empDesg;
+	
+	public Employee(){
+	}
 	
 	public long getEmpId() {
 		return empId;

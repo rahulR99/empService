@@ -9,7 +9,7 @@ public interface EmployeeService {
 	 * @param employee
 	 * @return
 	 */
-	int  addEmployee(Employee employee);
+	String  addEmployee(Employee employee);
 	
 	/**
 	 * @param id

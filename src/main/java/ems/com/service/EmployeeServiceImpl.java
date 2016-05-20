@@ -14,11 +14,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public EmployeeServiceImpl(){
 		
 	}
-	public int addEmployee(Employee employee) {
+	public String addEmployee(Employee employee) {
 		if (employee != null) {
 			this.dao.addEmployee(employee);
 		}
-		return 0;
+		return "SAved";
 	}
 	public List<Employee> searchEmployee(long empId, String name) {
 		List<Employee> employeeList = null;
