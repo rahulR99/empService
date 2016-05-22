@@ -26,7 +26,7 @@ public interface EmployeeService {
 	 * @param emp
 	 * @return
 	 */
-	String updateEmployee(Employee emp);
+	String updateEmployee(int empId,Employee emp);
 	/**
 	 * @return
 	 */

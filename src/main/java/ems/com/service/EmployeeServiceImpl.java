@@ -33,8 +33,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return this.dao.deleteEmployee(empId);
 	}
 
-	public String updateEmployee(Employee emp) {
-		return this.dao.updateEmployee(emp);
+	public String updateEmployee(int empId,Employee emp) {
+		return this.dao.updateEmployee(empId,emp);
 	}
 
 	public List<Employee> getAllEmployee() {

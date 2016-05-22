@@ -42,7 +42,16 @@ public class EmployeeServiceImplTest {
 
 	@Test
 	public void testUpdateEmployee() {
-		fail("Not yet implemented");
+		Employee employee=new Employee();
+		employee.setEmpName("RahulSingh11");
+		Address address=getAddress();
+		Department department=getDepartment();
+		employee.setDept(department);
+		employee.setSalary(45632.02);
+		employee.setAddress(address);
+		employee.setEmpDesg("SE");
+		employeeService.updateEmployee(2,employee);
+		assertTrue(true);
 	}
 
 	@Test

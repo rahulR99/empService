@@ -3,7 +3,6 @@ package ems.com.controller;
 import java.io.IOException;
 import java.util.List;
 
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -74,13 +73,13 @@ public class EmployeeController {
 	}
 
 /********************************** Update an Employee *****************************************************/
-	@RequestMapping(value = "/user/{id}", method = RequestMethod.PUT)
-	public @ResponseBody String updateEmployee(@PathVariable("id") long id,
+	@RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
+	public @ResponseBody String updateEmployee(@PathVariable("id") int id,
 			@RequestBody Employee emp) {
-		System.out.println("Updating User " + id);
+		System.out.println("Updating employee " + id);
 		EmployeeService employeeService = new EmployeeServiceImpl();
-		Employee employee = new Employee();
-		employeeService.updateEmployee(employee);
+		//Employee employee = new Employee();
+		employeeService.updateEmployee(id,emp);
 		return "updated";
 	}
 	
